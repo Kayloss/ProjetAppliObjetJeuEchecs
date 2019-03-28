@@ -25,18 +25,22 @@ void Pion::mouv(int cas){
         case 1 :
             nouvellePosition.first = positionX + 1;
             nouvellePosition.second = positionY;
+            break;
 
         case 2 :
             nouvellePosition.first = positionX + 2;
             nouvellePosition.second = positionY;
+            break;
 
         case 3 :
             nouvellePosition.first = positionX + 1;
             nouvellePosition.second = positionY + 1;
+            break;
 
         case 4 :
             nouvellePosition.first = positionX + 1;
             nouvellePosition.second = positionY - 1;
+            break;
     }
     this->setPosition(nouvellePosition);
 }

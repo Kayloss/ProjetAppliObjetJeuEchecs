@@ -1,6 +1,6 @@
 #include "Piece.h"
 
-Piece::Piece(int id, int positionX, int positionY, bool blanc,){
+Piece::Piece(int id, int positionX, int positionY, bool blanc){
     this->_id = id;
     this->_position.first = positionX;
     this->_position.second = positionY;

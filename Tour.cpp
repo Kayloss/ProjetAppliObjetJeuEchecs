@@ -26,18 +26,22 @@ void Tour::mouv(int cas, int nbCase){
         case 1 :
             nouvellePosition.first = positionX;
             nouvellePosition.second = positionY + nbCase;
+            break;
 
         case 2 :
             nouvellePosition.first = positionX + nbCase;
             nouvellePosition.second = positionY;
+            break;
 
         case 3 :
             nouvellePosition.first = positionX;
             nouvellePosition.second = positionY - nbCase;
+            break;
 
         case 4 :
             nouvellePosition.first = positionX - nbCase;
             nouvellePosition.second = positionY;
+            break;
     }
     this->setPosition(nouvellePosition);
 }
