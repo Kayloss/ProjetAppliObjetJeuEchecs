@@ -1,27 +1,24 @@
 #pragma once
 
+
 #include <iostream>
-#include <vector>
-#include <vector>
+#include <c++/4.8.3/vector>
 
 using namespace std;
 
 class Piece {
-private:
+protected:
     int _id;
     pair <int, int> _position;
-    bool _white;
-    bool _taken;
+    bool _blanc;
+    bool _enJeu;
     string _name;
 
 public:
-	vector<Piece*>*lesPieces;
-	
+    vector<Piece> lesPieces;
     Piece();
-    Piece(int id, bool white, bool taken, string name, int positionX, int positionY);
+    Piece(int id, bool blanc, bool enJeu, int positionX, int positionY);
     ~Piece();
-	void initPiece();
-
 
     int getId();
     void setId(int newValue);
@@ -29,6 +26,8 @@ public:
     virtual int getPositionX();
     virtual int getPositionY();
     virtual void setPosition(pair <int, int> newPosition);
+
+    void lirePiece();
 
     bool getWhite();
     void setWhite(bool newValue);
@@ -42,4 +41,6 @@ public:
     void addPiece();
 
     void showPiece();
+
+    void move();
 };
