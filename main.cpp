@@ -1,5 +1,3 @@
-// test
-
 #include "Piece.h"
 #include "Pion.h"
 #include "Tour.h"
