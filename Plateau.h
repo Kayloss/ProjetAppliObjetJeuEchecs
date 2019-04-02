@@ -4,10 +4,12 @@
 using namespace std;
 
 class Plateau {
+private:
+    string plateau[8][8];
+
 public:
     Plateau();
-    string plateau[7][7];
 
     void afficherPlateau();
-    virtual void initPlateau();
+    virtual void placerPieces(int positionX, int positionY, string nom);
 };

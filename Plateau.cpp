@@ -1,6 +1,9 @@
 #include <c++/4.8.3/iostream>
 #include "Plateau.h"
 
+Plateau::Plateau() {
+
+}
 
 void Plateau::afficherPlateau(){
 
@@ -33,6 +36,30 @@ void Plateau::afficherPlateau(){
         <<	"             |___|___|___|___|___|___|___|___|" << endl;
 }
 
-void Plateau::initPlateau(){
-
+void Plateau::placerPieces(int positionX, int positionY, string nom){
+    if (nom == "pio_n") {
+        this->plateau[positionX][positionY] = "Pn ";
+    } else if (nom == "pio_b") {
+        this->plateau[positionX][positionY] = "Pb ";
+    }else if (nom == "roi_n") {
+        this->plateau[positionX][positionY] = "ROn";
+    }else if (nom == "roi_b") {
+        this->plateau[positionX][positionY] = "ROb";
+    }else if (nom == "rei_n") {
+        this->plateau[positionX][positionY] = "REn";
+    }else if (nom == "rei_b") {
+        this->plateau[positionX][positionY] = "REb";
+    }else if (nom == "tou_n") {
+        this->plateau[positionX][positionY] = "Tn ";
+    }else if (nom == "tou_b") {
+        this->plateau[positionX][positionY] = "Tb ";
+    }else if (nom == "cav_n") {
+        this->plateau[positionX][positionY] = "Cn ";
+    }else if (nom == "cav_b") {
+        this->plateau[positionX][positionY] = "Cb ";
+    }else if (nom == "fou_n") {
+        this->plateau[positionX][positionY] = "Fn ";
+    }else if (nom == "fou_b") {
+        this->plateau[positionX][positionY] = "Fb ";
+    }
 }
