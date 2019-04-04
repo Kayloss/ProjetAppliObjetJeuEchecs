@@ -1,6 +1,6 @@
 #pragma once
 
-#include <c++/4.8.3/string>
+#include <string>
 using namespace std;
 
 class Plateau {
@@ -9,7 +9,9 @@ private:
 
 public:
     Plateau();
-
+	void verifPlateau();
+	void initPlateau();
     void afficherPlateau();
     virtual void placerPieces(int positionX, int positionY, string nom);
+	void jouerPiece();
 };
